@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- MDUI CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+    integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" crossorigin="anonymous" />
+  <!--FORT-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div>
+    <!--appbar-->
+    <div class="mdui-appbar">
+      <div class="mdui-toolbar mdui-color-theme">
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
+        <a href="javascript:;" class="mdui-typo-headline">MDUI</a>
+      </div>
+    </div>
+    <div style="width: 60%;" class="mdui-card mdui-center mdui-m-t-3">
+      <!---->
+      <div class="mdui-card-primary">
+        <div class="mdui-card-primary-title">Title</div>
+        <div class="mdui-card-primary-subtitle">Subtitle</div>
+        <div class="mdui-card-actions"></div>
+        <!--sua-->
+        <div style="width: 96%;" class="mdui-center mdui-textfield mdui-textfield-floating-label">
+          <label class="mdui-textfield-label">BV号或AV号</label>
+          <input id="v" class="mdui-textfield-input" type="text" required />
+          <div class="mdui-textfield-error">视频不能为空</div>
+        </div>
+      </div>
+      <div class="mdui-card-actions">
+        <button onclick="getavorbv()" class="mdui-btn mdui-btn-icon mdui-float-right">
+          <i class="mdui-icon material-icons">arrow_forward</i>
+        </button>
+      </div>
+    </div>
+</body>
+<!-- MDUI JavaScri pt -->
+<script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+  integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+  integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--MYJAVASC-->
+<script src="main.js"></script>
+</html>

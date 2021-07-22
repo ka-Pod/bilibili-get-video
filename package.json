@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "material-components-web": "^11.0.0",
+    "mdui": "^1.0.2"
+  }
+}
