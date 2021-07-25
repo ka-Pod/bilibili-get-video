@@ -5,14 +5,15 @@ function getavorbv() {
   var video = "https://tenapi.cn/bv/?id=" + vid;
   console.log(video);
 
-  $.ajax({
-    url: "https://tenapi.cn/bv/",
-    data: { id: vid },
-    type: "get",
-    success: function (res) {
-      console.log(res.code);
-    },
+  // 发送 GET 请求（默认的方法）
+  //bili = axios(video);
+  //console.log(bili)
+
+  fetch(video)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(myJson) {
+    console.log(myJson);
   });
 }
-
-  
